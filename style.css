@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+*{
+    transition: all 0.3s ease-in-out;
+}
+body{
+    background-color: #ff9fef;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.profile img{
+    border-radius: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+.profile img:hover{
+    transform: scale(1.5);
+}
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 2.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    text-shadow: 0px 2px 1px rgb(157, 0, 0), 0px 0px 6px rgb(255, 72, 0), 0px 5px 10px rgba(0, 0, 0, 1);
+}
+h4{
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5rem;
+}
+.card{
+    background-image: linear-gradient(rgb(255, 255, 2),rgb(0, 255, 229),rgb(255, 94, 0));
+    border-radius: 4px;
+    height: 85vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+@media only screen and (min-width:1000px) {
+    .card{
+        flex-direction: row-reverse;
+    }
+    .card img.birthday{
+        width: 100%;
+        max-width: 30vw;
+        max-height: unset;
+    }
+}
+@media only screen and (min-width:1000px) {
+    .card{
+        flex-direction: row-reverse;
+    }
+    .card img.birthday{
+        width: 100%;
+        max-width: 40vw;
+        max-height: unset;
+    }
+}
+img.birthday {
+    max-height: 40vh;
+}
+img.birthday:hover{
+    transform: scale(1.05);
+}
+.text{
+    padding: 1rem;
+}
+.text:hover{
+    color: rgb(37, 90, 251);
+    transform: scale(1.2);
+}
+.muted {
+    opacity: 0.8;
+}
+.space{
+    height: 100px;
+}
